@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+}
+:root{
+    --Light-red:hsl(356, 100%, 66%);
+    --Very-light-red: hsl(355, 100%, 74%);
+    --Very-dark-blue: hsl(208, 49%, 24%);
+    --White: hsl(0, 0%, 100%);
+    --Grayish-blue: hsl(240, 2%, 79%);
+    --Very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --Very-dark-black-blue: hsl(240, 10%, 16%);
+    --Very-light-red: hsl(13, 100%, 72%);
+    --Light-red: hsl(353, 100%, 62%);
+    --Very-dark-gray-blue: hsl(237, 17%, 21%);
+    --Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --overpass:'Overpass', sans-serif;
+    --ubuntu: 'Ubuntu', sans-serif;
+
+}
+
+/*header*/
+.head{
+    padding: 10% 5% 15% 5%;
+    background:var(--Very-light-red)  url('images/bg-pattern-intro.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--White);
+    border-radius: 0 0 0 70px;
+}
+.title{
+    padding: 0 20px;
+}
+.logo{
+    display: flex;
+}
+.login{
+    display: none;
+}
+.head-links{
+    display: flex;
+   align-self: flex-end;
+   justify-content: flex-end;
+   justify-self: flex-end;
+   text-align: left;
+   display: none;
+}
+.bars{
+    float: right;
+    position: absolute;
+    right: 2%;
+} 
+summary{
+    list-style: none; 
+    font-size: 1.2rem;
+}
+details li{
+    color: var(--Very-dark-blue);
+    text-align: center;
+}
+summary::after{
+    content: url('images/icon-arrow-light.svg');
+    padding-left: 3px;
+}
+/*menu
+.menu{
+    position: absolute;
+    top:20% ;
+    width: 80%;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--Very-dark-blue);
+    align-content: center;
+    text-align: center;
+    overflow: visible;
+}
+.menu li{
+    padding: 12px;
+}
+.menu .login{
+    padding-top: 20px;
+}
+.menu .btn{
+    color: var(--Very-dark-black-blue);
+    font-family: var(--ubuntu);
+    border: none;
+    font-size: 1.2rem;
+}
+.menu .btn:hover{
+    background: var(--Very-light-red);
+    color: white;
+}*/
+/*slogan*/
+.hide{
+    display: none;
+}
+.slogan{
+    display: grid;
+    margin: 10% 0;
+}
+.ps{
+    margin: auto;
+    text-align: center;
+}
+.main{
+    font-family: var(--overpass);
+    font-weight: 50;
+    font-size: 2.2rem;
+    padding-bottom: 10px;
+}
+.sub{
+    font-family: var(--ubuntu);
+}
+.buttons{
+    text-align: center;
+}
+.btn{
+    border: 1px solid var(--Grayish-blue);
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+.btn:hover{
+    background-color: white;
+    color: var(--Light-red);
+    font-family: var(--overpass);
+    font-weight: 650;
+}
+/*section-a*/
+.img{
+    width: 100%;
+}
+#section-a{
+    padding: 10%;
+}
+#section-a .main{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.para{
+    padding: 20px;
+}
+.para-main{
+    padding-bottom: 10px;
+    font-family: var(--overpass);
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--Very-dark-blue);
+    font-weight: 550;
+}
+.para-sub{
+    font-family: var(--overpass);
+    color: var(--Grayish-blue);
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+}
+/*section-b*/
+#section-b{
+    padding: 14% 10%;
+    position: relative;
+}
+#section-b .main{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+#section-b .text{
+    background-color: var(--Very-dark-blue);
+    padding:75% 4% 15% 4%;
+    border-radius:0 0 0 60px ;
+}
+#section-b .image img{
+    width: 300px;
+    position:absolute ;
+    bottom: 55%;
+}
+
+/*section-c*/
+#section-c img{
+    width: 100%;
+}
+/*FOOTER8*/
+#footer{
+    margin-top: 40px;
+    text-align: center;
+    background: var(--Very-dark-black-blue);
+    padding: 10%;
+    border-radius: 0 70px 0 0;
+}#footer .sub{
+    color: white;
+    padding: 20px 0;
+}
+#footer li{
+    color:var(--Grayish-blue);
+    padding-bottom: 5px;
+}
+
+@media screen and (min-width:700px){
+    .logo{
+        display: flex;
+    }
+    .head-links{
+        display: flex;
+        font-family:var(--ubuntu);
+        margin-left: 20px;
+    }
+    summary::after{
+        content: url('images/icon-arrow-light.svg');
+    }
+    .head-links .comp{
+        display: flex;
+        padding: 0 20px;
+    }
+    .products{
+        padding: 10px 0;
+        color: var(--Very-dark-gray-blue);
+    }
+    .login{
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding: 0 20px;
+    }
+    .login .btn{
+        padding: 10px 15px;
+        margin: 0 10px;
+        font-family: var(--ubuntu);
+    }
+    .login .btn:hover{
+        background-color: white;
+        color: var(--Light-red);
+    }
+    .logo{
+        display: flex;
+    }
+    .head{
+        padding: 5%;
+    }
+    .bars{
+        display: none;
+    }
+    .slogan{
+        margin: 6% 0;
+    }
+    .section-a-grid,.section-c-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 't i'
+        't i';
+    }
+    .section-a-grid .img{
+        grid-area: i;
+    }
+    .section-a-grid .text{
+        grid-area: t;
+    }
+    .para-sub{
+        font-size: 1rem;
+    }
+    .para-main{
+        font-size: 1.5rem;
+    }
+    #section-b{
+        background-color: var(--Very-dark-blue);
+        border-radius: 0 50px 0 50px;
+        padding: 5%;
+        margin-top: 5%;
+    }
+    #section-b .image{
+        bottom: 20%;
+    }
+    .section-b-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #section-b .text{
+        padding: 0;
+    }
+    #section-c{
+        margin-top: 7%;
+    }
+    #section-c .text{
+        margin-top: 5%;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 5%;
+    }
+    #footer .sub{
+        padding: 0 0 20px 0;
+    }
+}
